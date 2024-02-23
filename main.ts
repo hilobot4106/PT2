@@ -1,24 +1,135 @@
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    moveleft = false
+    moveright = false
+    moveup = true
+    movedown = false
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    projectile = sprites.createProjectileFromSprite(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . 3 3 . . . . . . . . . . . . 
-        . . . . 3 3 3 3 3 3 . . . 3 . . 
-        . . . . . . . . . . 3 3 3 3 . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, mySprite, 50, 50)
+    if (mySprite.vx == 0 && mySprite.vy == 0) {
+        projectile = sprites.createProjectileFromSprite(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+            . . 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, mySprite, 200, 0)
+    } else {
+        if (moveleft == true) {
+            projectile = sprites.createProjectileFromSprite(img`
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+                . . 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, mySprite, -200, 0)
+        }
+        if (moveright == true) {
+            projectile = sprites.createProjectileFromSprite(img`
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+                . . 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, mySprite, 200, 0)
+        }
+        if (movedown == true) {
+            projectile = sprites.createProjectileFromSprite(img`
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, mySprite, 0, 200)
+        }
+        if (moveup == true) {
+            projectile = sprites.createProjectileFromSprite(img`
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . 9 9 . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, mySprite, 0, -200)
+        }
+    }
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    moveleft = true
+    moveright = false
+    moveup = false
+    movedown = false
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    moveleft = false
+    moveright = true
+    moveup = false
+    movedown = false
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    moveleft = false
+    moveright = false
+    moveup = false
+    movedown = true
 })
 let projectile: Sprite = null
+let movedown = false
+let moveup = false
+let moveright = false
+let moveleft = false
 let mySprite: Sprite = null
 let count = 0
 scene.setBackgroundColor(6)
@@ -41,6 +152,10 @@ mySprite = sprites.create(img`
     . f d d f e e f d d b f f f f . 
     . f f f f f f f f f f f f f . . 
     `, SpriteKind.Player)
-controller.moveSprite(mySprite)
 tiles.setCurrentTilemap(list[0])
+controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
+moveleft = false
+moveright = false
+moveup = false
+movedown = false
