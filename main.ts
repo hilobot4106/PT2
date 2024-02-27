@@ -118,6 +118,9 @@ function enemyspawn (number: number, speed: number) {
             . . . 2 2 e e 4 4 4 2 e e . . . 
             . . . . . 2 2 e e e e . . . . . 
             `, SpriteKind.Enemy)
+        if (true) {
+        	
+        }
         tiles.placeOnRandomTile(enemy, sprites.castle.tileDarkGrass2)
         enemy.follow(mySprite, speed)
     }
