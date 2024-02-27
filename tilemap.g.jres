@@ -148,25 +148,6 @@
         ],
         "displayName": "level19"
     },
-    "level4": {
-        "id": "level4",
-        "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMDAwMTAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMjA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA4MDEwMTA3MDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwMTAxMDcwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwNTAxMDEwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MDEwMTA3MDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwMTAxMDcwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwNTAxMDEwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MDEwMTA3MDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwMTAxMDcwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwNTAxMDEwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MDEwMTA3MDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwMTAxMDcwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwNTAxMDEwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MDEwMTA5MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MGEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMjIyMjIyMjIyMjIyMjIyMg==",
-        "tileset": [
-            "myTiles.transparency16",
-            "sprites.dungeon.collectibleInsignia",
-            "sprites.dungeon.darkGroundNorthWest0",
-            "sprites.dungeon.darkGroundCenter",
-            "sprites.dungeon.darkGroundNorth",
-            "sprites.dungeon.darkGroundEast",
-            "sprites.dungeon.darkGroundSouth",
-            "sprites.dungeon.darkGroundWest",
-            "sprites.dungeon.darkGroundNorthEast0",
-            "sprites.dungeon.darkGroundSouthWest0",
-            "sprites.dungeon.darkGroundSouthEast0"
-        ],
-        "displayName": "level4"
-    },
     "level20": {
         "id": "level20",
         "mimeType": "application/mkcd-tilemap",
@@ -199,15 +180,35 @@
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMDAwMTAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAyMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDEwMTAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMTAxMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMzAxMDEwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDEwMTAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMTAxMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMzAxMDEwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDEwMTAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMTAxMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMzAxMDEwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDEwMTAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMTAxMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMzAxMDEwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDEwMTAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwNDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMjIyMjIyMjIyMjIyMjIyMg==",
+        "data": "MTAxMDAwMTAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwNDA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA0MDEwMTA0MDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDQwMTAxMDQwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwNDAxMDEwNDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjA0MDEwMTA0MDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDQwMTAxMDQwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwNDAxMDEwNDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjA0MDEwMTA0MDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDQwMTAxMDQwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwNDAxMDEwNDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjA0MDEwMTA0MDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDQwMTAxMDQwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwNDAxMDEwNDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjA0MDEwMTA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwMzAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMjIyMjIyMjIyMjIyMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
             "sprites.builtin.coral0",
             "sprites.castle.shrub",
-            "sprites.castle.saplingOak",
-            "sprites.builtin.coral3"
+            "sprites.builtin.coral3",
+            "sprites.castle.tileDarkGrass2"
         ],
         "displayName": "level1"
+    },
+    "level4": {
+        "id": "level4",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwYjBiMGIwYjBiMGIwYjBiMGIwYjBiMGIwYjBiMDEwMTBiMDIwNDA0MDQwNDA0MDQwNDA0MDQwNDA4MGIwMTAxMGIwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwYjAxMDEwYjA3MDMwMzAzMDMwMzAzMDMwMzAzMDMwNTBiMDEwMTBiMDcwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MGIwMTAxMGIwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwYjAxMDEwYjA3MDMwMzAzMDMwMzAzMDMwMzAzMDMwNTBiMDEwMTBiMDcwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MGIwMTAxMGIwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwYjAxMDEwYjA3MDMwMzAzMDMwMzAzMDMwMzAzMDMwNTBiMDEwMTBiMDcwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MGIwMTAxMGIwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDUwYjAxMDEwYjA5MDYwNjA2MDYwNjA2MDYwNjA2MDYwYTBiMDEwMTBiMGIwYjBiMGIwYjBiMGIwYjBiMGIwYjBiMGIwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMjIyMjIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.collectibleInsignia",
+            "sprites.dungeon.darkGroundNorthWest0",
+            "sprites.dungeon.darkGroundCenter",
+            "sprites.dungeon.darkGroundNorth",
+            "sprites.dungeon.darkGroundEast",
+            "sprites.dungeon.darkGroundSouth",
+            "sprites.dungeon.darkGroundWest",
+            "sprites.dungeon.darkGroundNorthEast0",
+            "sprites.dungeon.darkGroundSouthWest0",
+            "sprites.dungeon.darkGroundSouthEast0",
+            "sprites.castle.tileDarkGrass2"
+        ],
+        "displayName": "level4"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
